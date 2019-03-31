@@ -49,7 +49,7 @@ train = optimizer.minimize(loss)
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
-for i in range(2):
+for i in range(100):
     for j in range(rowCount):
         result = sess.run([train, x, yTrain, wn, b, n2, y, loss], feed_dict={x: xData[j], yTrain: yTrainData[j]})
         print(result)

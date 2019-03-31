@@ -26,7 +26,7 @@ train = optimizer.minimize(loss)
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
-for i in range(500):
+for i in range(5000):
     xData = [int(random.random() * 8 + 93), int(random.random() * 8 + 93), int(random.random() * 8 + 93)]
     xAll = xData[0] * 0.6 + xData[1] * 0.3 + xData[2] * 0.1
 
